@@ -28,7 +28,7 @@ app.use(compression());
 //app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/personalFinance')
+mongoose.connect('mongodb+srv://nbadroot:2M5XU78D19Nw36Hn@db-mongodb-nyc3-25617-6d409699.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-nyc3-25617')
   .then(() => {
     console.log("Connected to MongoDB successfully");
     // Do other operations here if needed
