@@ -1,0 +1,8 @@
+1. When ever I changed JWT secret it automatically doesnt reload when using nodemon, so
+I think we need to reload manually. If I can't see JWT variable being accessed or its printing
+nothing conole.log(process.env) this should print all enviroundment variables
+
+restart and print ->do this again and again to see whats the issue.
+
+Syntax for envirounment variables : JWT_SECRET=2ifnwepfwe-r1201ek12]1dofn32ff
+dont add "" or ; or anything else just add another env variable in the next line
