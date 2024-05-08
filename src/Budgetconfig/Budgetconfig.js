@@ -20,7 +20,7 @@ const ConfBudget = ({ userData }) => {
   
 
       // Call your backend API to create a new expense
-      const response = await fetch('http://localhost:3001/confBudget', {
+      const response = await fetch('/confBudget', {
         method: 'POST',
         body: JSON.stringify({ description, amount, user }),
         headers: {

@@ -46,7 +46,7 @@ const App = () => {
   const handleRenewToken = async () => {
     try {
       // Make a request to the server to renew the token
-      const response = await fetch('http://localhost:3001/renewToken', {
+      const response = await fetch('/renewToken', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const App = () => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');
     console.log("123");
-    window.location.href = "http://localhost:3001/signin";
+    window.location.href = "/signin";
   };
 
   return (

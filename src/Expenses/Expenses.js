@@ -18,7 +18,7 @@ const ExpenseForm = ({userData}) => {
 
   useEffect(() => {
     // Fetch description options from the database
-    axios.get('http://localhost:3001/expenses', {
+    axios.get('/expenses', {
         headers: {
           'X-User-ID': userData.user._id,
         },
@@ -65,7 +65,7 @@ const ExpenseForm = ({userData}) => {
       }
 
       // Call your backend API to create a new expense
-      const response = await fetch('http://localhost:3001/expenditure', {
+      const response = await fetch('/expenditure', {
         method: 'POST',
         body: JSON.stringify({ expense: formData.expense, amount: formData.amount, date, user }),
         headers: {

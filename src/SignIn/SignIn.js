@@ -12,7 +12,7 @@ const SignIn = ({ onSignIn }) => {
 
     try {
       // Call your backend API to authenticate the user
-      const response = await fetch('http://localhost:3001/signin', {
+      const response = await fetch('/signin', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
